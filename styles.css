@@ -3,6 +3,8 @@
 :root {
   --primary-color: #7c3aed;
   --dark-grey: #6b7280;
+  --projects-light-grey: #E5E7EB;
+  --footer: #A78BFA;
 }
 
 body {
@@ -88,17 +90,29 @@ header h2 {
     text-align: center;
 }
 
+header span {
+  color: var(--primary-color);
+}
+
 /** SECTION **/
-section h3 {
-    text-align: center;
-    padding: 2rem;
+section {
+    background-color: var(--projects-light-grey);
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 
 /** FOOTER **/
 footer {
-    background-color: var(--primary-color);
-    padding: 2rem 1rem;
+    background-color: var(--footer);
+    padding: 3rem;
+    margin-top: 2rem;
     text-align: center;
+    font-weight: bold;
     color: white;
     border-radius: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }
